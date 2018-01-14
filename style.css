@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+body {
+  display:flex;
+  flex-direction:column;
+  min-height: 100vh;
+  margin:0;
+  line-height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: black;
+  
+}
+
+*{margin: 0px;
+  padding:0px;
+}
+
+.wrapper {
+  display:flex;
+  flex-direction:column;
+  
+  flex: 1 0 auto;
+
+}
+
+.title {
+  order: -1;
+  padding:1.3em;
+  z-index:1;
+  background:black;
+  background: linear-gradient(to right, black, rgb(155, 155, 155)); /* https://www.w3schools.com/css/css3_gradients.asp*/ /*This fades the banner from black to grey, left-to-right and will display black if the browser does not support it*/
+}
+
+.titletext{
+  font-size: 30px;
+  color:white;
+  outline-color:black;
+}
+
+.main {
+  padding: 1em;
+  text-align:center;
+  background-color:white;
+  line-height: 1;
+  font: 15px/1 'Orbitron', sans-serif;
+  margin-bottom:2em;
+  flex: 1 0 auto;
+  max-width:99%
+}
+
+
+.mainjobs {
+  padding: 1em; 
+  text-align:center;
+  background-color:white;
+  line-height: 1;
+  font: 15px/1 'Orbitron', sans-serif;
+  margin-bottom:2em;
+  flex: 1 0 auto;
+}
+
+p{
+  font: 17px/1 'Orbitron', sans-serif;
+}
+
+strong {
+  font-size: 20px; 
+}
+
+.roletext {
+  font:17px/1 'Orbitron', sans-serif;
+  background-color: #b2b2b2;
+  padding: 10px;
+
+}
+
+
+.role{
+  margin-bottom: 4px;
+  
+}
+
+table{ 
+  padding:5px;  
+}
+
+th {
+  background-color:grey; /*this makes the terms be a different colour to the definitions to help with reading */
+  font-size: 15px;
+  padding:5px;
+}
+
+td {
+  background-color: #a8a7a7;/*this makes the terms be a different colour to the definitions to help with reading */
+  font-size:14px;
+  padding:5px;
+  text-overflow: ellipsis;
+}
+
+iframe { /*Adjustable video size on the home page*/
+  width:auto;
+  height:auto;
+  max-width:100%;
+}
+
+.thesum{ /*Although the class name only applied to one website, i used this to make the images scale in size*/
+  height:auto;
+  width:auto;
+  max-width:90%;
+}
+.aside {
+  padding:.5em;
+  padding-bottom: 1em;
+  text-align:left;
+  background-color:grey;
+  order:-1;
+  min-width: 190px;
+}
+
+ul{
+  overflow:inherit;
+  list-style-type:none;
+}
+
+li{
+  height: 25px; 
+  margin-right: 0px;
+  padding: 5px 0px;
+}
+
+li:hover a{
+  background-color: black; /*when the list items are hovered over they have a black background and have white text*/
+  color:white;
+  border-radius:10px;
+  padding: 3px;
+}
+
+li:active a{
+  font-weight: bold;
+  color: rgb(68, 30, 134);
+}
+
+li
+a {
+  text-decoration: none;
+  color:black;
+  font: 18px/1 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  transition:all 0.2s ease;
+}
+
+li.active a {
+  font-weight:bold;
+  color:rgb(68, 30, 134);
+}
+
+/*Hovering footer that has a fixed position and very small height*/
+.footer {
+  bottom:0;
+  left:0;
+  position:fixed;
+  width: 100%;
+  height:1em;
+  overflow:hidden;
+  transition: all 2s ease;
+  z-index:999;
+}
+
+.footer:hover { /*When the footer is hovered over it increases in height so that the form can be seen*/
+  transition: all 1s ease;
+  height: 240px;
+}
+
+/*Start of form styling*/
+.footer form {
+  padding:1px;
+  width: 40%;
+  border: 1px solid #000;
+  border-radius:1em;
+  font: 14px/1 'Orbitron', sans-serif;
+  background-color: white;
+  min-width:250px;
+}
+
+form div + div { 
+  margin-top:0.5em;
+}
+
+input, textarea {
+  font: 16px/1 'Orbitron', sans-serif;
+  width: 200px;
+  box-sizing:border-box;
+  border: 1px solid #000;
+}
+
+label {
+  display:inline-block;
+  width:100px;
+  text-align:right;
+}
+
+input:focus, textarea:focus {
+  border-color:#000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 3em;
+}
+
+.footer #form {
+  width:100%;
+  height:100%;
+  position:relative;
+  background: #000;
+  z-index: 999;
+}
+
+.form {
+  padding:1em;
+}
+/*End of form styling*/
+
+
+
+@media (min-width:800px) /*Any screen size bigger than 800px wide will have these styles applied to them*/
+{
+  body{
+    width:100%;
+  }
+  
+  .wrapper {
+    flex-direction: row;
+  }
+  
+  .title {
+    position: fixed;
+    width: 100%;
+    display:block;
+  }
+
+  .aside{
+    margin-top: 92px;
+    width:190px;
+    width:15%;
+  }
+  p{ 
+    font: 22px/1 'Orbitron', sans-serif;
+  }
+  
+  .main{
+    margin-top:90px;
+    flex:0 1 auto;
+    width:100%;
+  }
+  
+  .mainjobs{
+    margin-top:90px;
+    flex:0 1 auto;
+    width:100%;
+    padding: 1px;
+  }
+
+  .role {
+    float:left;
+    position: relative;
+    width:48%;
+    margin: 1%;
+  }
+
+  .roletext{
+    font-size:20px;
+  }
+  
+  th {
+    font-size: 20px;
+  }
+
+  td {
+    font-size:18px;
+  }
+  
+  iframe {
+    width:inherit;
+    height:auto;
+    min-height:350px;
+    max-width:50%;
+  }
+  
+  .footer form {
+    width:350px; 
+    padding:1em;
+  }
+  
+  .footer:hover {
+    height: 230px;
+  }
+}
+
+
+
+  

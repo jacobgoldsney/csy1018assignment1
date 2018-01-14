@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page about my experience and site validation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="title">
+      <p class="titletext">WHITESPACE</p>
+    </nav>
+    <div class="wrapper">
+      <main class="main">
+        <h1>My Experience</h1><br>
+        <p> When starting off with web development most of the concepts that I was going through I thought I understood. However when it came to developing my website for the assignment I was wrong. The first step I took to developing my website was to look at other websites for design features. There were various websites which influenced my design (refer to the design page). These websites primarily use white as a background to then put content on top to make it stand out more. Secondly they use a black header and footer to easily identify where the edges of the page are. I took those design features and implemented that into my pages as this made selecting colours to use easier.</p><br><br>
+        <p>The first thing I did when making the website was producing a standard layout for the website which would be used on every page, then creating space for the content of each page to go. Then I made my navigation buttons on the side for navigating the site. Then I made my footer, this is where I encountered my first major problem. Originally my footer was displayed in a fixed location at the bottom of the page, however after some research I made my footer display permanently but appear larger when hovered over. This footer then contained a form which I have used to have a feature for users to contact me (which doesn’t actually work).</p> <br><br>
+        <p>When adding content for each of my pages there were different problems encountered each time. The home page needed images for the team members, these needed optimising to be a small enough small size, so each were around 10KB. The glossary layout didn’t work originally so instead I chose to use a table to match the term with the definition, and many other problems. However, through a lot of research, trial and error and help from colleagues I managed to completed my website. I have also not used any code directly from other sources, other than adapting very basic functional requirements for such things as the form, hovering footer, title gradient, the glossary table and the overall layout of the page to fit my needs.</p> <br><br>
+        <p>In conclusion, the week-to-week development of the website was slow, due to not quite understanding how things worked, however with help from other people and taking the time to think about things I eventually completed it.</p> 
+        <br><br>
+        <p>Links and screenshots of websites viewed on design page.</p>
+        <br><br>     
+        <h1>Site Validation</h1><br>
+        <p>Below is screenshots of the validation results for every page (in order) and the css.</p><br><br>
+        <img class="thesum" src="validation_images/homevalid.png" alt="Screenshot of validation for the home page" /><br>
+        <img class="thesum" src="validation_images/glossaryvalid.png" alt="Screenshot of validation for the glossary page"/><br>
+        <img class="thesum" src="validation_images/comparisonvalid.png" alt="Screenshot of validation for the comparison page" /><br>
+        <img class="thesum" src="validation_images/pathwayvalid.png" alt="Screenshot of validation for the pathway page" /><br>
+        <img class="thesum" src="validation_images/designvalid.png" alt="Screenshot of validation for the design page" /><br>
+        <img class="thesum" src="validation_images/experiencevalid.png" alt="Screenshot of validation for the experience" /><br>
+        <img class="thesum" src="validation_images/cssvalid.png" alt="Screenshot of validation for the css" /><br>
+      </main>
+      <aside class="aside">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="glossary.html">Glossary</a></li>       
+          <li><a href="jobs.html">Comparisons</a></li>
+          <li><a href="network.html">My Pathway</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li class="active"><a href="webdev.html">My Experience</a></li>
+        </ul>
+      </aside>
+    </div>
+    <footer class="footer">
+      <div id="form">
+        <div class="form">
+          <form>
+            <label>Contact Us</label>			  
+            <div id="from">
+              <label for="name">Name</label> <input type="text" id="name" name="name">
+            </div>
+            <div id="reply">
+              <label for="email">Email</label> <input type="email" id="email" name="email">
+            </div>					  
+            <div id="message">
+              <label for="msg">Message</label> <textarea id="msg" name="user_message"></textarea>
+            </div>				
+            <div class="button">
+              <button type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
